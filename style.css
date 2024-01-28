@@ -1,0 +1,110 @@
+h1{
+  text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    overflow: hidden;
+    
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 15px;
+        height: 50px;
+        margin-top: 8%;
+        }
+        .box{
+          margin-bottom: 70px;
+        }
+  }
+  .box {
+    width: 85%;
+    height: 80%;
+    border: 3px solid green;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+    padding-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.788), 
+                0 6px 20px rgba(0,0,0,.19);
+     border-radius:20px;
+     display:flex; /* Add this line */
+     flex-direction: column; /* Add this line */
+     justify-content:center; /* Add this line */
+     align-items:center; /* Add this line */
+     
+  }
+  
+  textarea {
+      resize:none;
+      background-color: #FAACA8;
+      background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.788), 
+      0 6px 20px rgba(0,0,0,.19);
+      font-size:15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:90%; /* Add this line */
+      max-width:500px; /* Change the value as per your requirement */
+  }
+  .button-75 {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-75:active {
+    outline: 0;
+  }
+  
+  .button-75:hover {
+    outline: 0;
+  }
+  
+  .button-75 span {
+    transition: all 200ms;
+  }
+  
+  .button-75:hover span {
+    transform: scale(.9);
+    opacity: .75;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .button-75 {
+      font-size: 15px;
+      height: 50px;
+    }
+  
+    .button-75 span {
+      line-height: 50px;
+    }
+  }
